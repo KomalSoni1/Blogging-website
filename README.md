@@ -1,1 +1,2 @@
-# Blogging-website
+Blogging Website – THE DEN
+Developed a responsive blogging platform with features like a dynamic navigation bar, categories (Lifestyle, Philosophy, Environment, Case Studies), a "New Post" modal with image upload support, and a polished footer with social media integration. Leveraged HTML, CSS, and JavaScript to create an engaging and user-friendly interface. Focused on modern, responsive design for seamless accessibility across devices.
