@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #333;
+  background: url('background.jpg') center/cover no-repeat fixed;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; background: rgba(255, 255, 255, 0.6); z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(73, 164, 225, 0.87); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;
+}
+.navbar .logo { display: flex; align-items: center; }
+.logo-img { width: 80px; margin-right: 10px; }
+.logo-text { font-size: 40px; font-weight: bold; color: white; }
+.nav-links {
+  list-style: none; display: flex; margin: 0; padding: 0;
+}
+.nav-links li { margin-left: 20px; position: relative; }
+.nav-links a { color: rgb(250, 249, 255); text-decoration: none; font-size: 18px; }
+.nav-links a:hover { text-decoration: underline; }
+.nav-links li:hover .dropdown { display: block; }
+
+/* Dropdown */
+.dropdown {
+  display: none; position: absolute; top: 100%; left: 0; background: rgba(155, 218, 235, 0.83); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); list-style: none; padding: 10px 0; border: 1px solid #ddd;
+}
+.dropdown li { padding: 10px 20px; }
+.dropdown a { color: white; font-weight: normal; }
+.dropdown a:hover { color: #462d9f; background: rgba(152, 150, 217, 0.24); }
+
+/* Containers */
+.container {
+  max-width: 800px; margin: 30px auto; padding: 20px; background: rgba(34, 145, 219, 0.43); border-radius: 8px;
+}
+h1 { font-size: 50px; font-weight: bold; color: white; text-align: center; }
+
+/* Buttons */
+button {
+  cursor: pointer; padding: 0.5rem 1rem; background: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px;
+}
+button:hover { background: #0056b3; }
+
+/* Modal */
+.modal {
+  display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;
+}
+.modal-content {
+  background: white; padding: 20px; border-radius: 8px; width: 400px;
+}
+.close-btn { font-size: 28px; color: #333; position: absolute; top: 10px; right: 10px; cursor: pointer; }
+
+/* Blog Post Meta */
+.post-meta { font-size: 14px; color: #777; margin-bottom: 10px; }
+.author { font-weight: bold; }
+.date { font-style: italic; color: #555; }
+
+/* Footer */
+.footer {
+  background: rgba(84, 126, 231, 0.73); color: white; padding: 20px 0; text-align: center; font-family: 'Montserrat', sans-serif ;
+}
+.footer-links {
+  list-style: none; margin: 10px 0 0; display: flex; justify-content: center; gap: 15px;
+}
+.footer-links a { color: white; font-size: 14px; text-decoration: none; }
+.footer-links a:hover { color: rgba(47, 2, 225, 0.98); text-decoration: underline; }
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px; margin: 20px auto; padding: 20px; background: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;
+}
+.contact-form button {
+  background: #007BFF; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;
+}
+.contact-form button:hover { background: #0056b3; }
+
+/* About Page */
+.about-content {
+  display: flex; align-items: center; gap: 20px; margin: 40px auto; max-width: 800px;
+}
+.about-image {
+  width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-content p { font-size: 18px; line-height: 1.6; }
+
+.post-content {
+  display: inline; /* Inline for seamless truncation */
+}
+
+.dots {
+  display: inline;
+}
+
+.read-more-btn {
+  margin-top: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+.post-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the area */
+  border-radius: 5px; /* Optional: adds rounded corners */
+  margin: 10px 0; /* Optional: adds spacing around the image */
+}
+
+/* Styling for Instagram icon */
+.footer-links a i {
+  margin-right: 8px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links li a:hover {
+  color: #E1306C; /* Instagram color */
+}
+
+.footer-links li a i {
+  font-size: 20px; /* Icon size */
+}
