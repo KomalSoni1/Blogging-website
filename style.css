@@ -9,7 +9,7 @@ body::before {
 
 /* Navbar */
 .navbar {
-  background: rgba(73, 164, 225, 0.87); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;
+  background: rgba(16, 94, 147, 0.837); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;
 }
 .navbar .logo { display: flex; align-items: center; }
 .logo-img { width: 80px; margin-right: 10px; }
@@ -32,9 +32,9 @@ body::before {
 
 /* Containers */
 .container {
-  max-width: 800px; margin: 30px auto; padding: 20px; background: rgba(34, 145, 219, 0.43); border-radius: 8px;
+  max-width: 1200px; margin: 30px auto; padding: 20px; background: rgba(120, 176, 213, 0.312); border-radius: 8px;
 }
-h1 { font-size: 50px; font-weight: bold; color: white; text-align: center; }
+h1 { font-size: 50px; font-weight: bold; color: rgb(0, 7, 9); text-align: center; }
 
 /* Buttons */
 button {
@@ -58,7 +58,7 @@ button:hover { background: #0056b3; }
 
 /* Footer */
 .footer {
-  background: rgba(84, 126, 231, 0.73); color: white; padding: 20px 0; text-align: center; font-family: 'Montserrat', sans-serif ;
+  background: rgba(16, 94, 147, 0.837) ; color: white; padding: 20px 0; text-align: center; font-family: 'Montserrat', sans-serif ;
 }
 .footer-links {
   list-style: none; margin: 10px 0 0; display: flex; justify-content: center; gap: 15px;
@@ -135,4 +135,53 @@ button:hover { background: #0056b3; }
 
 .footer-links li a i {
   font-size: 20px; /* Icon size */
+}
+#blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-post-tile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-post-tile:hover {
+  transform: translateY(-10px);
+}
+
+.blog-post-tile img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+.blog-post-tile h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.blog-post-tile p {
+  color: #555;
+  font-size: 14px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  resize: vertical; /* Allows users to resize only vertically */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6c63ff; /* Add a custom border color when focused */
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
 }
